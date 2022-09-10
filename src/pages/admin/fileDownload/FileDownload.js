@@ -1,4 +1,3 @@
-
 import React, { useEffect, useState } from "react";
 import Table from "../../../components/table/Table";
 import { logfile } from "../../../services/serviceWrapper";

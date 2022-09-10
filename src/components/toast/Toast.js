@@ -1,4 +1,3 @@
-
 import React from "react";
 import { Toast as RBToast } from "react-bootstrap";
 import PropTypes from "prop-types";

@@ -1,4 +1,3 @@
-
 import React, { useContext } from "react";
 import { Redirect } from "@reach/router";
 import { UserContext } from "../user/UserContext";
