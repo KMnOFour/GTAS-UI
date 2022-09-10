@@ -1,8 +1,3 @@
-<!--
- All GTAS code is Copyright 2016, The Department of Homeland Security (DHS), U.S. Customs and Border Protection (CBP).
-
- Please see license.txt for details.
--->
 
 ** LazyImage handles lazy loading of images in the public folder under root **
 
