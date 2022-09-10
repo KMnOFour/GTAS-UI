@@ -2,7 +2,6 @@
 import React from "react";
 import Title from "../../components/title/Title";
 import Xl8 from "../../components/xl8/Xl8";
-import { Link } from "@reach/router";
 
 const Page404 = () => {
   return (

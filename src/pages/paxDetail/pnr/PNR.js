@@ -1,4 +1,3 @@
-
 import React from "react";
 import { Row, Col } from "react-bootstrap";
 import SegmentTable from "../../../components/segmentTable/SegmentTable";
@@ -13,7 +12,6 @@ import {
 } from "../../../utils/utils";
 import Xl8 from "../../../components/xl8/Xl8";
 import { Link } from "@reach/router";
-import { LK } from "../../../utils/constants";
 
 const PNR = props => {
   const data = hasData(props.data) ? props.data : {};
@@ -219,56 +217,28 @@ const PNR = props => {
     };
   });
   const documents = asArray(data.documents).map(doc => {
-    // const expirationDate = Date.parse(doc.expirationDate);
-    return {
-      ...doc,
-      expirationDate: timezoneFreeDate(doc.expirationDate),
-      key: `DOCS${doc.documentNumber} `
-    };
+    return {...doc, expirationDate: timezoneFreeDate(doc.expirationDate), key: `DOCS${doc.documentNumber} `};
   });
   const addresses = asArray(data.addresses).map(address => {
-    return {
-      ...address,
-      street: address.line1,
-      key: `ADD${address.city} `
-    };
+    return {...address, street: address.line1, key: `ADD${address.city} `};
   });
   const phoneNumbers = asArray(data.phoneNumbers).map(pNumber => {
-    return {
-      ...pNumber,
-      key: `PHONE${pNumber.number} `
-    };
+    return {...pNumber, key: `PHONE${pNumber.number} `};
   });
   const emails = asArray(data.emails).map(email => {
-    return {
-      ...email,
-      key: `EMAIL${email.address} `
-    };
+    return {...email, key: `EMAIL${email.address} `};
   });
   const creditCards = asArray(data.creditCards).map(ccData => {
-    return {
-      ...ccData,
-      expiration: localeMonthYear(ccData.expiration),
-      key: `FOP${ccData.number} `
-    };
+    return {...ccData, expiration: localeMonthYear(ccData.expiration), key: `FOP${ccData.number} `};
   });
   const frequentFlyerDetails = asArray(data.frequentFlyerDetails).map(ffd => {
-    return {
-      ...ffd,
-      key: `FTI${ffd.number} `
-    };
+    return {...ffd, key: `FTI${ffd.number} `};
   });
   const agencies = asArray(data.agencies).map(agency => {
-    return {
-      ...agency,
-      key: `AGEN${agency.identifier} `
-    };
+    return {...agency, key: `AGEN${agency.identifier} `};
   });
   const seatAssignments = asArray(data.seatAssignments).map(seatAssignment => {
-    return {
-      ...seatAssignment,
-      key: `SEAT${seatAssignment.number}`
-    };
+    return {...seatAssignment, key: `SEAT${seatAssignment.number}`};
   });
 
   const totalBaggage = getBagData(data);

@@ -1,4 +1,3 @@
-
 import React, { useEffect, useState } from "react";
 import Xl8 from "../../../components/xl8/Xl8";
 import CardWithTable from "../../../components/cardWithTable/CardWithTable";

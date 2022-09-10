@@ -1,4 +1,3 @@
-
 import React, { useState, useEffect } from "react";
 import Graph from "../../../components/graph/Graph";
 import ErrorBoundary from "../../../components/errorBoundary/ErrorBoundary";

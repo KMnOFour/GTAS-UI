@@ -1,4 +1,3 @@
-
 import React, { useState, useEffect, useRef, useContext } from "react";
 import IdleTimer from "react-idle-timer";
 import { LookupContext } from "../../context/data/LookupContext";

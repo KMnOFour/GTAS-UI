@@ -1,4 +1,3 @@
-
 import React from "react";
 import { paxdetailsReport } from "../../../services/serviceWrapper";
 import Xl8 from "../../../components/xl8/Xl8";
@@ -18,7 +17,7 @@ const DownloadReport = props => {
         a.click();
         document.body.removeChild(a);
       } else {
-        console.log("ERROR! Error in generating GTAS Event Report. No data was retured");
+        console.log("Error in generating GTAS Event Report. No data was retured");
       }
     });
   };

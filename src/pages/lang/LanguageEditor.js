@@ -1,4 +1,3 @@
-
 import React, { useState, useEffect, useContext } from "react";
 import { LiveEditContext } from "../../context/translation/LiveEditContext";
 import Title from "../../components/title/Title";
