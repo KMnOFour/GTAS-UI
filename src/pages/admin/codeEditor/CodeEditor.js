@@ -1,4 +1,3 @@
-
 import React, { useState, useEffect } from "react";
 import Title from "../../../components/title/Title";
 import Main from "../../../components/main/Main";
