@@ -1,4 +1,3 @@
-
 import React, { useEffect, useState } from "react";
 import Title from "../../components/title/Title";
 import Table from "../../components/table/Table";

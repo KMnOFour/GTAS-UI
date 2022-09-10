@@ -1,4 +1,3 @@
-
 import React, { useEffect, useRef, useState } from "react";
 import { Link, useParams } from "@reach/router";
 import Seat from "./seat/Seat";

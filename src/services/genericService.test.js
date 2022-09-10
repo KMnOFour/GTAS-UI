@@ -1,4 +1,3 @@
-
 import GenericService from "./genericService";
 
 describe("GenericService works", () => {

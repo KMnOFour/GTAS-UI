@@ -1,4 +1,3 @@
-
 import React, { useState, useEffect, useContext } from "react";
 import Table from "../../../components/table/Table";
 import Title from "../../../components/title/Title";
@@ -18,7 +17,7 @@ import "./QueryRules.css";
 import {UserContext} from "../../../context/user/UserContext";
 
 //TODO - the two fetches, rulesall and rules, are separate but they don't need to be. Until we have requirements preventing some
-//users or roles from fetching all rules, we should consider pulling all data from rulesall and filtering the results for "my rules".
+//users or roles from fetching all rules, we should consider pulling all data from rulesall and filtering the results for the "my rules" tab locally.
 const Rules = props => {
   const addRule = <Xl8 xid="rul001">Add Rule</Xl8>;
   const editRule = <Xl8 xid="rul002">Edit Rule</Xl8>;

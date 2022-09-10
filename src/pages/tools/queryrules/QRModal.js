@@ -1,4 +1,3 @@
-
 import React, { useState, useEffect, useMemo, useContext } from "react";
 import RAQB from "../../../components/raqb/RAQB";
 import { Button, Row } from "react-bootstrap";
@@ -397,7 +396,6 @@ const QRModal = props => {
     newSummary[ev.name] = ev.value;
 
     setSummaryData(newSummary);
-    // console.log(newSummary);
     setTitle(newSummary.title);
     setRefresh(true);
   };

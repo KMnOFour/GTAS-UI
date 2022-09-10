@@ -1,4 +1,3 @@
-
 import React from "react";
 import PropsTypes from "prop-types";
 import { Link } from "@reach/router";
@@ -9,8 +8,10 @@ import LabelledInput from "../../labelledInput/LabelledInput";
 const SeatInfo = props => {
   const selectedSeatInfo = props.info;
 
-  return hasData(selectedSeatInfo) ? (
-    <Container fluid>
+  if (!hasData(selectedSeatInfo)) return "";
+
+  return (
+  <Container fluid>
       <Row>
         <Col>
           <b>First Name:</b>
@@ -71,10 +72,9 @@ const SeatInfo = props => {
         </Link>
       </Col>
     </Container>
-  ) : (
-    ""
-  );
+  )
 };
+
 SeatInfo.propTypes = {
   info: PropsTypes.object
 };

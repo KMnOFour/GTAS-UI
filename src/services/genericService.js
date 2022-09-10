@@ -1,4 +1,3 @@
-
 import { navigate } from "@reach/router";
 import { hasData } from "../utils/utils";
 import { FULLPATH_TO } from "../utils/constants";
