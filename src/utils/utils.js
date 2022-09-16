@@ -170,10 +170,9 @@ export function localeDateWithSeconds(val) {
 // Takes incoming strings like "yyyy-mm-dd" for DOB, document expiration dates, etc. and avoids
 // date conversions that default to UTC (eg Date.parse()) that throw the value off by a day.
 export const timezoneFreeDate = val => {
-  if (!hasData(val)) return "";
+  let [year, month, day] = val.split("-");
+  const asDate = new Date(year, month - 1, day);
 
-  let asDate = new Date(...val.split("-"));
-  asDate.setMonth(asDate.getMonth() - 1);
   return localeDateOnly(asDate);
 };
 
